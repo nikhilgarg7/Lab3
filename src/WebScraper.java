@@ -31,8 +31,9 @@ public class WebScraper {
 
     public static int wordCount (String contents) {
         int wordCount = 0;
+        String newWord = "";
         for (int i = 0; i < contents.length(); i++) {
-            String newWord = "";
+            newWord = "";
             while ((int) contents.charAt(i) != (int) ' ') {
                 if (i == contents.length() - 1) {
                     break;
